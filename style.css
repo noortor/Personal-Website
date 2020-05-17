@@ -1,0 +1,33 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-cropper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 15px;
+    display: block;
+    margin:auto
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+}
