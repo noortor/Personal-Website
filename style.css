@@ -24,7 +24,7 @@ img {
 
 /*######### Nav Bar #########*/
 img.nav-home-img {
-    width: 1.5em;
+    width: 1em;
 }
 
 .navbar-brand {
@@ -37,14 +37,30 @@ img.nav-home-img {
     transform: translatex(-50%);
 }
 
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: orange!important;}
 
 /*######### Header #########*/
+.header-img {
+    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
+    background-size: cover;
+    
+}
+
 #section-1-gradient {
-    background: rgb(0,132,255,);
-    background: -webkit-linear-gradient(90deg, rgba(156,70,252,1) 0%, rgba(0,132,255,1) 50%, rgba(63,251,234,1) 100%);  
-    background: -o-linear-gradient(90deg, rgba(156,70,252,1) 0%, rgba(0,132,255,1) 50%, rgba(63,251,234,1) 100%);  
-    background: -moz-linear-gradient(90deg, rgba(156,70,252,1) 0%, rgba(0,132,255,1) 50%, rgba(63,251,234,1) 100%);  
-    background: linear-gradient(90deg, rgba(156,70,252,1) 0%, rgba(0,132,255,1) 50%, rgba(63,251,234,1) 100%); 
+    background: rgb(0,132,255,0.7);
+    background: -webkit-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: -o-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: -moz-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%); 
 }
 
 .jumbotron {
@@ -67,6 +83,8 @@ p.lead {
 .big-logo {
     width: 40%;
 }
+
+/*######### Carousel #########*/
 
 
 /*######### Profile Pic #########*/
