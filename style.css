@@ -1,13 +1,15 @@
 /*######### Defaults ##########*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
 h1, 
 h4, 
 p {
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    line-height: 1;
-    margin: 0;
 }
 
 nav,
@@ -24,7 +26,7 @@ img {
 
 /*######### Nav Bar #########*/
 img.nav-home-img {
-    width: 1em;
+    width: 2.5em;
 }
 
 .navbar-brand {
@@ -46,42 +48,76 @@ img.nav-home-img {
 }
 
 .nav-link:hover {
-    color: orange!important;}
-
-/*######### Header #########*/
-.header-img {
-    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
-    background-size: cover;
-    
+    color: orange!important;
 }
 
-#section-1-gradient {
+/*######### Header #########*/
+.header-gradient {
     background: rgb(0,132,255,0.7);
     background: -webkit-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
     background: -o-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
     background: -moz-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
     background: linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%); 
+    width: 100%;
+    height: 700px;
 }
 
-.jumbotron {
+
+.content {
+    overflow: auto;
+    position: relative;
+}
+
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('assets/minecraft-house.png');
+    background-size:cover;
+    width: 100%; 
+    height: 700px;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.header {
     background-color: inherit;
     text-align: center;
+    padding: 75px 0px 75px 0px;
 }
 
-h1.display-4 {
+/*### Home Header ###*/
+.home-header-img:before {
+    background: url("assets/minecraft-house.png") no-repeat center center;
+}
+
+/*### Project Header ###*/
+.project-header-img:before {
+    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
+}
+
+h1{
+    font-family: '', 'Electrolize', freight-display-pro;
     color: white;
-    font-size: 120px;
+    font-size: 140px;
     margin: 0;
     line-height 70px; 
+    padding-bottom: 50px;
 }
 
 p.lead {
+    font-family: '', 'Electrolize', freight-display-pro;
     color: white;
-    font-size: 35px;
-}
-
-.big-logo {
-    width: 40%;
+    font-size: 30px;
+    line-height: 50px;
+    padding-left: 180px;
+    padding-right: 180px;
 }
 
 /*######### Carousel #########*/
@@ -101,7 +137,24 @@ p.lead {
 }
 
 .profile-pic {
+    display: inline;
+    margin: 0 auto;
     width: 100%;
     height: auto;
     margin-top: -20px;
+}
+
+.wrapper {
+    display: block;
+    padding: 100px;
+}
+
+.image-cover {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    object-position: center 24px;
 }
