@@ -25,7 +25,12 @@ img {
 
 
 /*######### Nav Bar #########*/
-img.nav-home-img {
+.nav-home-img {
+    width: 2.5em;
+}
+
+.nav-home-img:hover {
+    content: url("assets/Personal-logo-complete-orange.png");
     width: 2.5em;
 }
 
@@ -45,6 +50,8 @@ img.nav-home-img {
 
 .nav-link {
     color: white;
+    transition-property: color;
+    transition-duration: 0.05s;
 }
 
 .nav-link:hover {
@@ -61,7 +68,6 @@ img.nav-home-img {
 
 #header-img {
     position: relative;
-    background: url('../assets/minecraft-house.png') no-repeat center center;
     background-position: top center;
     background-size: cover;
     height: 100%;
@@ -101,7 +107,7 @@ img.nav-home-img {
 }
 
 /*### Home Header ###*/
-.home-header-img:before {
+.header-img-home {
     background: url("assets/minecraft-house.png") no-repeat center center;
 }
 
