@@ -1,0 +1,208 @@
+/*######### Defaults ##########*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+h1, 
+h4, 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1{
+    font-family: '', 'Electrolize', freight-display-pro;
+    color: white;
+    font-size: 140px;
+    margin: 0;
+    line-height 70px; 
+    padding-bottom: 50px;
+}
+
+p.lead {
+    font-family: '', 'Electrolize', freight-display-pro;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+
+/*######### Nav Bar #########*/
+.nav-home-img {
+    width: 2.5em;
+}
+
+.nav-home-img:hover {
+    content: url("assets/Personal-logo-complete-orange.png");
+    width: 2.5em;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: white;
+    transition-property: color;
+    transition-duration: 0.05s;
+}
+
+.nav-link:hover {
+    color: orange!important;
+}
+
+/*######### Header #########*/
+.header-container {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header-img {
+    position: relative;
+    background-position: top center; 
+    background-size: cover; 
+    height: 1100px;
+    width: 100%;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0,132,255,0.7);
+    background: -webkit-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: -o-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: -moz-linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%);  
+    background: linear-gradient(90deg, rgba(156,70,252,0.7) 0%, rgba(0,132,255,0.7) 50%, rgba(63,251,234,0.7) 100%); 
+    opacity: .6;
+}
+
+.header-content { 
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+}
+
+.header {
+    background-color: inherit;
+    text-align: center;
+    padding: 75px 0px 75px 0px;
+}
+
+/*### Home Header ###*/
+.header-img-home {
+    background: url("assets/minecraft-pics/minecraft-house-3.png") no-repeat center center;
+}
+
+/*### About Header ###*/
+.header-img-about {
+    background: url("assets/minecraft-pics/minecraft-house-3.png") no-repeat center center;
+}
+
+.header-container-about {
+    height: 600px;
+}
+
+
+/*### Project Header ###*/
+.project-header-img:before {
+    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
+}
+
+/*### About Content ###*/
+.title-about {
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    font-family: inherit;
+    padding: 0px 50px 0px 0px;
+}
+
+.text-box-about {
+    margin: 40px 0px 40px 0px;
+}
+
+.p-about {
+    line-height: 1.5;
+}
+
+
+/*######### Carousel #########*/
+
+
+/*######### Profile Pic #########*/
+/* .image-cropper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 15px;
+    display: block;
+    margin:auto
+} */
+
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+.image-cover {
+    background-color: white;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    object-position: center 24px;
+}
