@@ -77,7 +77,7 @@ p.lead {
     color: orange!important;
 }
 
-/*######### Header #########*/
+/*######### General Header #########*/
 .header-container {
     height: 700px;
     width: 100%;
@@ -125,27 +125,28 @@ p.lead {
     padding: 75px 0px 75px 0px;
 }
 
-/*### Home Header ###*/
+
+.header-container-about, .header-container-projects {
+    height: 600px;
+}
+
+/*### Home Header #############*/
 .header-img-home {
     background: url("assets/minecraft-pics/minecraft-house-3.png") no-repeat center center;
 }
 
-/*### About Header ###*/
+/*### About Header #############*/
 .header-img-about {
     background: url("assets/minecraft-pics/minecraft-house-3.png") no-repeat center center;
 }
 
-.header-container-about {
-    height: 600px;
-}
-
-
-/*### Project Header ###*/
+/*### Project Header #############*/
 .project-header-img:before {
     background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
 }
 
-/*### About Content ###*/
+
+/*### About Content #############*/
 .title-about {
     color:black;
     font-size: 50px;
@@ -159,6 +160,17 @@ p.lead {
 
 .p-about {
     line-height: 1.7;
+}
+
+/*### Projects Content ###*/
+.title-projects {
+    
+}
+
+.text-box-projects {
+}
+
+.p-projects {
 }
 
 
