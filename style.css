@@ -137,12 +137,13 @@ p.lead {
 
 /*### About Header #############*/
 .header-img-about {
-    background: url("assets/minecraft-pics/minecraft-house-3.png") no-repeat center center;
+    background: url("assets/amazonyard.jpg") no-repeat;
 }
 
 /*### Project Header #############*/
-.project-header-img:before {
-    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") no-repeat center center;
+.header-img-project {
+    top: -180px;
+    background: url("https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png") repeat center center;
 }
 
 
@@ -159,15 +160,32 @@ p.lead {
 }
 
 .p-about {
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 /*### Projects Content ###*/
 .title-projects {
-    
+    color:black;
+    font-size: 60px;
+    text-align: center;
+    padding: 0;
 }
 
-.text-box-projects {
+.p-projects {
+    line-height: 1.7
+}
+
+.wrapper-projects {
+    margin: 20px 0px;
+    border: 2px solid black;
+}
+
+.img-wrapper-projects {
+    margin: 40px;
+    height: 370px;
+    width: 400px;
+    border: 2px solid black;
+    object-fit: contain;
 }
 
 .p-projects {
